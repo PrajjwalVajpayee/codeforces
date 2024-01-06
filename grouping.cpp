@@ -5,25 +5,18 @@ int main(){
     cin>>t;
     while(t--){
     int n;
-    int a[n];
     cin>>n;
+    int a[n];
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
     int p=n/2;
-    bool f=true;
-    int b=0;
-    for(int i=0;i<p+1;i++){
-        if(a[p]<a[p+1]){
-            f=false;
-            b=a[p];
-        }
-    }
-    if(f){
+    if(n==1||n==2)
+       cout<<0<<endl;
+   
+       else if(a[p]>=a[p+1]){
         cout<<0<<endl;
     }
     else{
-        cout<<b<<endl;
-    }
-    }
-    }
+        cout<<a[p]<<endl;
+    }}}
